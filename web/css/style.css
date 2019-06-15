@@ -691,3 +691,11 @@ input[type='radio']:checked + label:before {
 @keyframes run {
   100% {
     background-position-x: -234px; } }
+
+#right {
+  float: left;
+}
+
+#left {
+  float: right;
+}
