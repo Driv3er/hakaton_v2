@@ -290,10 +290,32 @@
 
         <form class="form_container">
 
-                <label for='field_name'>Firs name</label>
-                <input required name='field_name' type='text' placeholder='enter Your name...' />
+                <label for='field_name'>First name</label>
+                <input required name='field_name' id="field_name" type='text' placeholder='enter Your name...' />
 
+                <label for='field_lastname'>Last name</label>
+                <input required name='field_lastname' id="field_lastname" type='text' placeholder='Last name' />
 
+                <label for='field_company'>Company</label>
+                <input name='field_company' id="field_company" type='text' />
+
+                <label for='field_email'>e-mail</label>
+                <input name='field_email' id="field_email" type='email' />
+
+                <label for='field_tel'>Telephone</label>
+                <input name='field_tel' id="field_tel" type='tel' />
+
+                <label for='field_textarea' class="field_textarea_label">YOUR MESSAGE</label>
+                <textarea id="field_textarea" class="field_textarea" rows="40" cols="40">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua…</textarea>
+
+                <label for='field_validate'>Prove you’re human. What’s 8+10 ?</label>
+                <input name='field_validate' id="field_validate" type='text' />
+
+                
+                <button class='form_btn' type='submit'>SEND</button>
+
+                <div class="form_footer">We hate spam as much as you do! View our <a>Privacy Policy</a>.</div>
+            
 
 
         </form>

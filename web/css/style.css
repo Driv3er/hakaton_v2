@@ -70,7 +70,7 @@ html {
 
 a {
   text-decoration: none;
-  color: inherit; }
+  color: #7A217F; }
   a:hover {
     color: #4a90e2; }
 
@@ -473,19 +473,6 @@ p {
     .video-cont video {
       height: 100%; }
 
-.form_header {
-  color: #0D70B7;
-  font-size: 32px;
-  text-align: center;
-  margin-bottom: 25px; }
-
-.form_description {
-  text-align: center;
-  font-size: 16px;
-  width: 544px;
-  height: 65px;
-  margin: auto; }
-
 .graphic__img {
   vertical-align: middle; }
 
@@ -648,3 +635,97 @@ p {
   top: 50px;
   font-family: "Poppins", sans-serif;
   font-size: 36px; }
+
+.form_header {
+  color: #0D70B7;
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 25px; }
+
+.form_description {
+  text-align: center;
+  font-size: 16px;
+  width: 544px;
+  height: 65px;
+  margin: auto;
+  margin-bottom: 25px; }
+
+.form_container {
+  width: 544px;
+  margin: auto; }
+
+label {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 16px;
+  color: #B7B7B7;
+  font-weight: bold; }
+
+input {
+  display: block;
+  border: 0;
+  background: transparent;
+  border-bottom: 2px solid #B7B7B7;
+  width: 100%;
+  height: 24px;
+  margin-top: -5px;
+  margin-bottom: 25px;
+  color: #767676;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px; }
+
+::-webkit-input-placeholder {
+  color: #B7B7B7;
+  font-size: 12px; }
+
+::-moz-placeholder {
+  color: #B7B7B7;
+  font-size: 12px; }
+
+::-ms-input-placeholder {
+  color: #B7B7B7;
+  font-size: 12px; }
+
+::placeholder {
+  color: #B7B7B7;
+  font-size: 12px; }
+
+.field_textarea {
+  width: 100%;
+  height: 161px;
+  resize: none;
+  padding: 32px;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  color: #707070;
+  background-color: #F8F8F8;
+  border: 1px solid #B7B7B7;
+  margin-bottom: 30px; }
+
+.field_textarea_label {
+  display: block; }
+
+.form_btn {
+  display: block;
+  color: #fff;
+  border: 1px solid #0D70B7;
+  border-radius: 5px;
+  text-transform: uppercase;
+  padding: 1rem 2rem;
+  font-size: 12px;
+  font-weight: bold;
+  background-color: #7A217F;
+  width: 160px;
+  height: 48px;
+  margin: 70px auto 30px auto; }
+  .form_btn:hover {
+    color: #7A217F;
+    background-color: #F8F8F8; }
+
+.form_footer {
+  color: #B7B7B7;
+  font-size: 12px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold; }
