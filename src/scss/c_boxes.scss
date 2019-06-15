@@ -7,48 +7,44 @@
    &-cont{
         display: flex;
         flex-wrap: wrap;
-        margin-left: -.5*$space;
-        margin-right: -.5*$space;
+        margin-left: auto;
+        margin-right: auto;
         text-align: center;
    }
 }
+
+.har {
+    border-width: 1px;
+    border-style: solid;
+    border-color: #858585;
+}
+
+.auth{
+    text-align: center;
+    font-size: 11px;
+    color: #b7b7b7;
+}
+
 .box{
-    display: inline-block;
-    padding: .5*$space;
-    flex-basis: 100%;
-    
-    @include min-media(420px){
-        flex-basis: 50%;
-    }
-    @include min-media($bpoint-tab){
-        flex-basis: 33.3334%;
-    }
-    @include min-media($bpoint-desk){
-        flex-basis: 25%;
-    }
-    
-    &--text-center{
-        text-align: center;
-    }
+    display: block;
+    padding: 0%;
+    margin: 2%;
+    flex-basis: 29%;
 
     &-img{
         overflow: hidden;
-        margin-bottom: .5*$space;
-        
-        /* jako opcja */
-        &--circle{
-            border-radius: 50%;
-        }
+        margin-bottom: 2*$space;
+
         
         
         img{
-            vertical-align: middle; // zniwelowanie odstępu na dole
+            vertical-align: middle;
         }
         
         
         &--elastic{
             position: relative;
-            padding-bottom: 100%;
+            padding-bottom: 0%;
             background-color: $color-3;
             
             img{
@@ -77,6 +73,9 @@
     
     &-header{
         display: inline-block;
+        font-size: 14px;
+        font-weight: bold;
+        color: black; 
         
         &--center{
             display: block;
