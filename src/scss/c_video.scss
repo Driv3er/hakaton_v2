@@ -1,23 +1,13 @@
 .video{
     overflow: hidden;
     margin: 0;
-
-    // chcemy pozycjonowac wszystko (na 100% szerokosci) wzgledem modulu, a nie wrapera 
     position: relative;
+    border-color: #7A217F;
+    border-width: 2px;
+    border-style: solid;
     .wrapper{
         position: static;
-        height: 10vh;
-        // padding-top: $space;
-        // padding-bottom: $space;
-        
-        // padding-bottom: 9 / 16 * 100%;
-        // wychodzi na to ze film nie ma dokladnie 16:9
-        padding-bottom: 55%;
-        
-        // @include min-media($bpoint-tab){
-        //     padding-top: 2*$space;
-        //     padding-bottom: 2*$space;
-        // }
+        padding-bottom:13*$space;
     }
     
     
@@ -25,17 +15,19 @@
         position: absolute;
         color: $white;
         top: $space;
+        margin-left: 12*$space;;
         
         @include min-media($bpoint-tab){
-            top: 2*$space;
+            top: 7*$space;
         }
     }
 
     &-controls{
         position: absolute;
-        bottom: $space;
+        bottom: 7*$space;
+        margin-left: 13.8*$space;
         @include min-media($bpoint-tab){
-            bottom: 2*$space;
+            bottom: 7*$space;
         }
 
         button{
@@ -65,16 +57,12 @@
         background-color: $color-4;
     }
 
-
     &-cont{
         position: absolute;
-        top: 0; left: 0; right: 0; bottom: 0;
+        top: 0; left: 0%; right: 0; bottom: 0;
 
         video{
-            height: 100%;
-            // position: absolute;
-            // left: 50%;
-            // transform: translateX(-50%);
+            height: 70vh;
         }
 
 
