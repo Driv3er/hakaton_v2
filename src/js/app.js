@@ -41,37 +41,37 @@ window.onload = function(){
         video_mod.classList.remove('is-playing');
     };
 
-    //form submit
-    form_el.onsubmit = function(event){
-        event.preventDefault();
+    // //form submit
+    // form_el.onsubmit = function(event){
+    //     event.preventDefault();
 
-        form_el.classList.add('is-submitted');
-        var isError = false;
+    //     form_el.classList.add('is-submitted');
+    //     var isError = false;
 
-        for (var i=0; i < form_req.length; i++){
-            if ( form_req[i].checkValidity() != true ){
-                isError = true;
-            }
-        }
+    //     for (var i=0; i < form_req.length; i++){
+    //         if ( form_req[i].checkValidity() != true ){
+    //             isError = true;
+    //         }
+    //     }
 
-        if (!isError){
-            // base js send post
-            var xhttp = new XMLHttpRequest();
-            xhttp.onreadystatechange = function() {
-                if (this.readyState == 4 && this.status == 200) {
-                    alert('form send');
+    //     if (!isError){
+    //         // base js send post
+    //         var xhttp = new XMLHttpRequest();
+    //         xhttp.onreadystatechange = function() {
+    //             if (this.readyState == 4 && this.status == 200) {
+    //                 alert('form send');
                     
-                    form_el.classList.remove('is-submitted');
-                    form_el.reset();
-                }
-            };
-            xhttp.open("POST", "https://httpstat.us/200", true);
-            xhttp.send(new FormData(form_el));
-        }else{
-            console.log('there are some not property validated fields')
-        }
+    //                 form_el.classList.remove('is-submitted');
+    //                 form_el.reset();
+    //             }
+    //         };
+    //         xhttp.open("POST", "https://httpstat.us/200", true);
+    //         xhttp.send(new FormData(form_el));
+    //     }else{
+    //         console.log('there are some not property validated fields')
+    //     }
 
-    }
+    // }
 
     //loader hidding
 
@@ -114,3 +114,10 @@ function scrollCallback(position){
         }
     }
 }
+
+
+var swiper = new Swiper('.swiper-container', {
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  });

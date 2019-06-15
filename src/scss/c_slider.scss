@@ -1,0 +1,55 @@
+.swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+  .swiper-slide {
+  
+    font-size: 18px;
+    background: #fff;
+    // background:red;
+    position:relative;;
+  }
+
+  .slider__img {
+      display: inline-block;
+    
+
+  }
+
+  .slider__txt{
+    position:absolute;
+    top:10px;
+    height:167px;
+    width:499px;
+    display: inline-block;
+    font-family: 'Roboto Slab', serif;
+    font-size:24px;
+    text-align: left;
+    padding:60px;
+    color:$grey;
+  }
+
+
+  .slider__footer {
+      margin-top:10px;
+    font-size:16px;
+    text-align: left;
+    font-family: $font-1;
+  }
+
+  .slider__bold {
+    font-weight: bold;
+    color:$black;
+   
+  }
+
+  .slider__quote{
+      display:inline-block;
+      position:absolute;
+      left:25px;
+      top:50px;
+      font-family: $font-1;
+      font-size:36px;
+   
+  }
+

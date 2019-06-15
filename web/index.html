@@ -7,8 +7,10 @@
 
     <title></title>
     <link rel="stylesheet" href="css/style.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
     
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300&display=swap&subset=latin-ext" rel="stylesheet"> 
    
 
 </head>
@@ -130,63 +132,7 @@
 
     </div>
 </section> 
-    <section class='component form' data-video>
-    <div class='wrapper'>
-
-        <h2>Our form</h2>
-
-        <form class='form-cont' novalidate>
-
-            <div class='form-block form-block--half'>
-                <div class='form-el'>
-                    <label for='field_t'>Field for text</label>
-                    <input required name='field_t' type='text' placeholder='tekst' />
-                    <span class='form-error-msg'>Wrong text!</span>
-                </div>
-                <div class='form-el'>
-                    <label for='field_e'>Field for email</label>
-                    <input required name='field_e' type='email' placeholder='adres@poczta.pl' />
-                    <span class='form-error-msg'>Wrong email!</span>
-                </div>
-                <div class='form-el'>
-                    <label for='field_p'>Field for text with pattern (postal)</label>
-                    <input required name='field_p' type='text' pattern='[0-9]{2}-[0-9]{3}' placeholder='xx-xxx' />
-                    <span class='form-error-msg'>Wrong text!</span>
-                </div>
-            </div>
-            <div class='form-block form-block--half'>
-                <div class='form-el'>
-                    <label for='field_s'>Field for select</label>
-                    <select required name='field_s'>
-                        <option value='' selected>Select value</option>
-                        <option value='1'>Value 1</option>
-                        <option value='2'>Value 2</option>
-                    </select>
-                    <span class='form-error-msg'>Wrong value!</span>
-                </div>
-                <div class='form-el'>
-                    <label for='field_r'>Are You sure?</label>
-                    <input required name='field_r' id='field_yes' type='radio' value="yes" />
-                    <label for='field_yes'>Yes</label>
-                    <input required name='field_r' id='field_no' type='radio' value="no" />
-                    <label for='field_no'>No</label>
-                    <span class='form-error-msg'>Nothing chcecked!</span>
-                </div>
-                <div class='form-el'>
-                    <label for='field_c'>Please agree with me...</label>
-                    <input required name='field_c' id='field_cbox' type='checkbox' />
-                    <label for='field_cbox'>Checkbox label</label>
-                    <span class='form-error-msg'>Check something!</span>
-                </div>
-            </div>
-            <div class='form-block ta-center'>
-                <button class='btn' type='submit'>Send form</button>
-            </div>
-
-        </form>
-
-    </div>
-</section> 
+   
     <section class='component graphic'>
     <div class="wrapper">
         <h2>Category</h2>
@@ -247,7 +193,112 @@
         </div>
     </div>
 </section>
+     <section class="component slider">
+    <div class="wrapper">
+            <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                          <div class="slider__img">
+                            <img class="slider__image" src="/img/slider1.jpg" alt="">
+                            </div>
+                            <div class="slider__txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                <div class="slider__footer"><span class="slider__bold">Eliza Kulesza </span> DeadEnd Development Specialist</div>
+                                <div class="slider__quote">"</div>
+                            </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="slider__img">
+                          <img class="slider__image" src="/img/slider2.jpg" alt="">
+                          </div>
+                          <div class="slider__txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                              <div class="slider__footer"><span class="slider__bold">Krzysztof Krawczyk </span> DeadEnd Development Specialist</div>
+                              <div class="slider__quote">"</div>
+                          </div>
+                    </div>
 
+                    <div class="swiper-slide">
+                        <div class="slider__img">
+                          <img class="slider__image" src="/img/slider1.jpg" alt="">
+                          </div>
+                          <div class="slider__txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                              <div class="slider__footer"><span class="slider__bold">Eliza Kulesza </span> DeadEnd Development Specialist</div>
+                              <div class="slider__quote">"</div>
+                          </div>
+                    </div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                  </div>
+
+    </div>
+</section>
+    <section class='component form' data-video>
+    <div class='wrapper'>
+
+        <!-- <form class='form-cont' novalidate>
+
+            <div class='form-block form-block--half'>
+                <div class='form-el'>
+                    <label for='field_t'>Field for text</label>
+                    <input required name='field_t' type='text' placeholder='tekst' />
+                    <span class='form-error-msg'>Wrong text!</span>
+                </div>
+                <div class='form-el'>
+                    <label for='field_e'>Field for email</label>
+                    <input required name='field_e' type='email' placeholder='adres@poczta.pl' />
+                    <span class='form-error-msg'>Wrong email!</span>
+                </div>
+                <div class='form-el'>
+                    <label for='field_p'>Field for text with pattern (postal)</label>
+                    <input required name='field_p' type='text' pattern='[0-9]{2}-[0-9]{3}' placeholder='xx-xxx' />
+                    <span class='form-error-msg'>Wrong text!</span>
+                </div>
+            </div>
+            <div class='form-block form-block--half'>
+                <div class='form-el'>
+                    <label for='field_s'>Field for select</label>
+                    <select required name='field_s'>
+                        <option value='' selected>Select value</option>
+                        <option value='1'>Value 1</option>
+                        <option value='2'>Value 2</option>
+                    </select>
+                    <span class='form-error-msg'>Wrong value!</span>
+                </div>
+                <div class='form-el'>
+                    <label for='field_r'>Are You sure?</label>
+                    <input required name='field_r' id='field_yes' type='radio' value="yes" />
+                    <label for='field_yes'>Yes</label>
+                    <input required name='field_r' id='field_no' type='radio' value="no" />
+                    <label for='field_no'>No</label>
+                    <span class='form-error-msg'>Nothing chcecked!</span>
+                </div>
+                <div class='form-el'>
+                    <label for='field_c'>Please agree with me...</label>
+                    <input required name='field_c' id='field_cbox' type='checkbox' />
+                    <label for='field_cbox'>Checkbox label</label>
+                    <span class='form-error-msg'>Check something!</span>
+                </div>
+            </div>
+            <div class='form-block ta-center'>
+                <button class='btn' type='submit'>Send form</button>
+            </div>
+
+        </form> -->
+
+        <div class="form_header">Get in touch</div>
+        <div class="form_description">If you have questions about purchasing ISV Online, you’re in the right place!</div>
+
+        <form class="form_container">
+
+                <label for='field_name'>Firs name</label>
+                <input required name='field_name' type='text' placeholder='enter Your name...' />
+
+
+
+
+        </form>
+    </div>
+</section> 
     <footer class='component footer'>
     <div class='wrapper'>
         <div class='footer-nav'>
@@ -304,7 +355,10 @@
 </footer>
 
 
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
     <script src="js/app.js" type="text/javascript"></script>
+
 
 </body>
 
