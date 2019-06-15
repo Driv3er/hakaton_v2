@@ -371,6 +371,10 @@ p {
         -webkit-transform: translateY(-50%);
                 transform: translateY(-50%); } }
 
+.titlee {
+  text-align: center;
+  font-weight: bold; }
+
 .boxes-cont {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -378,7 +382,8 @@ p {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-left: -1rem;
-  margin-right: -1rem; }
+  margin-right: -1rem;
+  text-align: center; }
 
 .box {
   display: inline-block;
@@ -491,7 +496,7 @@ p {
 
 .swiper-slide {
   font-size: 18px;
-  background: #fff;
+  background: #f8f8f8;
   position: relative; }
 
 .slider__img {
@@ -620,6 +625,10 @@ input {
   text-align: center;
   font-family: "Poppins", sans-serif;
   font-weight: bold; }
+
+.map {
+  width: 100%;
+  height: 80vh; }
 
 #grid {
   overflow: auto;

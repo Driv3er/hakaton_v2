@@ -1,9 +1,15 @@
+.titlee {
+    text-align: center;
+    font-weight: bold;
+}
+
 .boxes{
    &-cont{
         display: flex;
         flex-wrap: wrap;
         margin-left: -.5*$space;
         margin-right: -.5*$space;
+        text-align: center;
    }
 }
 .box{
