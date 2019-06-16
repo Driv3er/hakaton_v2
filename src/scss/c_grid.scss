@@ -1,6 +1,8 @@
 #grid{
     overflow: auto;
     position: relative;
+    margin-top: 8%;
+    margin-bottom: 8%;
 }
 
 .grid1, .grid2, .grid3, .grid4 {
@@ -44,7 +46,7 @@
     }
 
     .grid1:hover, .grid2:hover, .grid3:hover, .grid4:hover {
-        background-color: #7A217F;
+        background-color: rgb(110, 29, 114);
     }
 
     .g_txt {

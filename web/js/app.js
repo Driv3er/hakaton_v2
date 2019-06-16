@@ -38,7 +38,7 @@ window.onload = function(){
         video_el.currentTime = 0;
         video_el.pause();
         is_playing = false;
-        video_mod.classList.remove('is-playing');
+        video_mod.classList.remove('is-playing', 'video-header');
     };
 
     // //form submit

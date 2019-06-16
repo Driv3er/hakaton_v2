@@ -1,19 +1,11 @@
 .footer{
-    color: $color-2;
+    color: #B7B7B7;
     
     &-nav{
-
-        //clearfix
-        overflow: auto; // lub padding-bottom: 1px - nakładanie się marginów
-        //or
-        // &::after {
-        //     content: "";
-        //     clear: both;
-        //     display: table;
-        // }
-
+        overflow: auto;
         margin-left: -.5*$space;
         margin-right: -.5*$space;
+        color: #B7B7B7;
 
         &-group{
             margin-bottom: $space;
@@ -35,21 +27,16 @@
 
         }
         &-category{
-            display: inline-block; // aby nie było klikalne puste pole obok linku
+            display: inline-block;
             font-weight: $fw-bold;
-            color: $color-1;
+            color: #767676;
             margin-top: 0;
             margin-bottom: $space;
-            //margin-bottom: .5*$space;
         }
-
     }
 
     &-copyright{
         font-size: $font-size-body2;
         margin-bottom: $space;
     }
-    
-   
-
 }
