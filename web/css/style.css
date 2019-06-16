@@ -624,6 +624,18 @@ input {
   font-family: "Poppins", sans-serif;
   font-weight: bold; }
 
+.form-error-msg {
+  display: block;
+  visibility: hidden;
+  position: absolute;
+  right: -110px;
+  top: 20px;
+  color: red; }
+
+.form__field {
+  position: relative;
+  display: block; }
+
 .map {
   width: 100%;
   height: 80vh; }

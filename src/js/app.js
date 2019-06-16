@@ -2,17 +2,15 @@ window.onload = function(){
 
     var BODY = this.document.querySelector('body'),
         btn_menu = this.document.querySelector('[data-menu-btn]'),
-        //video
+     
         video_mod = this.document.querySelector('[data-video]'),
         video_el = video_mod.querySelector('video'),
         btn_pause = video_mod.querySelector('[data-pause-btn]'),
         btn_play = video_mod.querySelector('[data-play-btn]'),
         vid_progress = video_mod.querySelector('[data-progress]'),
         is_playing = false
-        //form 
-        form_mod = this.document.querySelector('.form'),
-        form_el = form_mod.querySelector('form'),
-        form_req = form_mod.querySelectorAll('[required]')
+    
+       
     ;
 
     // hamburger menu
@@ -41,37 +39,7 @@ window.onload = function(){
         video_mod.classList.remove('is-playing', 'video-header');
     };
 
-    // //form submit
-    // form_el.onsubmit = function(event){
-    //     event.preventDefault();
-
-    //     form_el.classList.add('is-submitted');
-    //     var isError = false;
-
-    //     for (var i=0; i < form_req.length; i++){
-    //         if ( form_req[i].checkValidity() != true ){
-    //             isError = true;
-    //         }
-    //     }
-
-    //     if (!isError){
-    //         // base js send post
-    //         var xhttp = new XMLHttpRequest();
-    //         xhttp.onreadystatechange = function() {
-    //             if (this.readyState == 4 && this.status == 200) {
-    //                 alert('form send');
-                    
-    //                 form_el.classList.remove('is-submitted');
-    //                 form_el.reset();
-    //             }
-    //         };
-    //         xhttp.open("POST", "https://httpstat.us/200", true);
-    //         xhttp.send(new FormData(form_el));
-    //     }else{
-    //         console.log('there are some not property validated fields')
-    //     }
-
-    // }
+   
 
     //loader hidding
 
@@ -121,3 +89,44 @@ var swiper = new Swiper('.swiper-container', {
       el: '.swiper-pagination',
     },
   });
+
+  form_mod = this.document.querySelector('.form'),
+  form_el = form_mod.querySelector('form'),
+  form_req = form_mod.querySelectorAll('[required]')
+  form_err=form_mod.querySelectorAll('.form-error-msg')
+
+
+    form_el.onsubmit = function(event){
+        event.preventDefault();
+        console.log('aaa')
+
+        form_el.classList.add('is-submitted');
+        var isError = false;
+
+        for (var i=0; i < form_req.length; i++){
+            if ( form_req[i].checkValidity() != true ){
+                isError = true;
+            }
+        }
+
+        if (!isError){
+          
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    alert('form send');
+                    
+                    form_el.classList.remove('is-submitted');
+                    form_el.reset();
+                }
+            };
+            xhttp.open("POST", "https://httpstat.us/200", true);
+            xhttp.send(new FormData(form_el));
+        }else{
+            for (let i=0; i<form_err.length; i++) {
+            form_err[i].style.visibility= "visible";
+            }
+          
+        }
+
+    }
