@@ -1,0 +1,18 @@
+.partners{
+    margin: 0;
+    border-bottom: 1px solid #B7B7B7;
+
+    p{
+        margin-top: 1em;
+        font-size: 0.6em;
+        text-align: center;
+    }
+
+    .img-wrapper{
+        width: 100%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        margin-bottom: 2em;
+    }
+}

@@ -7,9 +7,10 @@
     height: 2 * $space;
     overflow: hidden;
     color: $white;
+    font-size: 12px;
 
     @include min-media($bpoint-tab){
-        height: 3 * $space;
+        height: 4 * $space;
     }
 
     @include max-media($bpoint-desk){
@@ -18,39 +19,48 @@
             height: 100vh;
         }
     }
-
+    .main-menu {
+        display: flex;
+        width: 100%;
+        padding-left: 10em;
+        padding-right: 10em;
+        align-items: center;
+    }
     &-logo{
-        position: absolute;
-        z-index: 20;
-        top: .5 * $space;
-        left: $space;
-        width: 60px;
-        
+
+        z-index: 20;    
         @include min-media($bpoint-tab){
-            left: 2 * $space;
-            top: $space;
         }
 
         @include min-media($bpoint-desk){
-            top: .5 * $space;
         }
     }
     
     &-nav{
-        @extend %simple-text-shadow;
-        padding-top: 3 * $space;
+        flex-grow: 1;
         text-align: center;
+        padding-top: 0;
+        padding-right: 7em;
+        padding-left: 7em;
+        // text-align: right;
         li, a{
-            display: block;
-            width: 100%;
+            display: inline-block;
+            width: auto;
+            color: $white;
         }
         li{
-            border-top: 1px solid $color-1-light;
+            border-top: 0;
         }
         a{
-            padding: .5 * $space;
+            padding: 1em 3em;
+            color: $white;
+            &:hover{
+                color: $white;
+                // box-shadow: 0 2px 0 0 $white, 0 4px 0 0 $color-4-light, 0 6px 0 0 $color-4;
+            }
         }
 
+    
         @include min-media($bpoint-desk){
             
             padding-top: 0;
@@ -58,21 +68,52 @@
             li, a{
                 display: inline-block;
                 width: auto;
+                color: $white;
             }
             li{
                 border-top: 0;
             }
             a{
-                padding: .9*$space .75*$space;
+                padding: 1em 3em;
+                color: $white;
                 &:hover{
-                    color: inherit;
-                    box-shadow: 0 2px 0 0 $white, 0 4px 0 0 $color-4-light, 0 6px 0 0 $color-4;
+                    color: $white;
+                    // box-shadow: 0 2px 0 0 $white, 0 4px 0 0 $color-4-light, 0 6px 0 0 $color-4;
                 }
             }
         }
+        
 
+        &-top{
+            border-bottom: 1px solid rgba(255, 2556, 255, .5);
+            text-align: right;
+            
+            li, a{
+                color: rgba(255, 2556, 255, .5);
+            }
+        }
+
+        
     }
-    
+
+    .wrapper{
+        padding: 0;
+        margin: 0;
+        max-width: 100%;
+    }
+
+    #contact-us {
+        border: 1px solid white;
+        background-color: transparent;
+        border-radius: 5px;
+        padding: 1em 4em;
+        text-transform: none;
+        font-size: 1em;
+        color: white;
+        height: 4em;
+        line-height: 2;
+    }
+ 
     &-menu-btn{
 
         $bar_height: .125 * $space;
@@ -141,7 +182,7 @@
 /* fixed / animacje */
 @include min-media($bpoint-desk){
     .header{
-        position: fixed;
+        // position: fixed;
         
         &.compact{
             @include getnet(rgba(0,0,0,.2));

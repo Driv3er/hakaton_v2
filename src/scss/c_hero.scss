@@ -3,19 +3,22 @@
     margin: 0;
     color: $white;
     background-color: $color-2-light;
-    height: 450px;
-    background-image: url(../img/hero-mob.jpg);
+    height: 100vh;
+    background-size: cover;
+    min-height: 36 * $base-unit;
+    background-image: url(../img/headerimg.jpg);
     background-repeat: no-repeat;
     background-position: center center;
 
 
     @include min-media($bpoint-tab){
         height: 600px;
-        background-image: url(../img/hero-tab.jpg);
+        background-image: url(../img/headerimg.jpg);
     }
 
     @include min-media($bpoint-desk){
-        background-image: url(../img/hero-desk.jpg);
+        height: 100vh;
+        background-image: url(../img/headerimg.jpg);
     }
     
     /**/
@@ -29,53 +32,95 @@
         left: 0;
         bottom: 0;
         
-        $pattern-color: rgba(0,0,0,.2);
+        // $pattern-color: rgba(0,0,0,.2);
         //background-color: $pattern-color;
-        background: linear-gradient(to top, transparent 1px, $pattern-color 1px, $pattern-color 2px, transparent 2px), linear-gradient(to left, transparent 1px, $pattern-color 1px, $pattern-color 2px, transparent 2px);
-        background-size: 3px 3px;
+        // background: linear-gradient(to top, transparent 1px, $pattern-color 1px, $pattern-color 2px, transparent 2px), linear-gradient(to left, transparent 1px, $pattern-color 1px, $pattern-color 2px, transparent 2px);
+        // background-size: 3px 3px;
     }
     /**/
     &:after{
         content: "";
         position: absolute;
         z-index: 1;
-        top: 40%;
+        top: 0;
         right: 0;
         left: 0;
         bottom: 0;
         
-        $pattern-color: rgba(0,0,0,.2);
+        // $pattern-color: rgba(0,0,0,.2);
         //background-color: $pattern-color;
-        background: linear-gradient(to bottom, transparent, rgba(0,0,0,.4) 3*$space);
+        background: linear-gradient(to right, rgba(122, 33, 127, 1), rgba(122, 33, 127, .3));
     }
     
     /**/
-    @media (min-width:1024px) and (orientation: landscape){
-        height: 100vh;
-        background-size: cover;
-        min-height: 36 * $base-unit;
-    }
+    // @media (min-width:1024px) and (orientation: landscape){
+    //     height: 100vh;
+    //     background-size: cover;
+    //     min-height: 36 * $base-unit;
+    // }
     
     .wrapper{
         z-index: 2;
         height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
 
     &-cont{
-        position: absolute;
-        left: $space;
-        
+        // position: absolute;
+        // left: $space;
+        font-size: 12px;
+        width: 544px;
+
         @include min-media($bpoint-tab){
-            left: 2*$space;
-            bottom: 3*$space;
+            // left: 2*$space;
+            // bottom: 3*$space;
         }
         @include max-media($bpoint-tab){
-            top: 50%;
+            // top: 50%;
             transform: translateY(-50%);
         }
         
-        &--test-shadow{
-            @extend %simple-text-shadow;
+        h4 {
+            font-weight: bold;
+            margin-bottom: 1em;
+            font-size: 1.5em;
+        }
+        h2{
+            font-weight: bold;
+        }
+        // &--test-shadow{
+        //     @extend %simple-text-shadow;
+        // }
+
+        #demo-request{
+            margin: auto;
+            display: flex;
+            border: 1px solid white;
+            border-radius: 5px;
+            height: 4em;
+            padding: .5em;
+            align-items: center;
+            width: 350px;
+            position: relative;
+
+            input {
+                flex-grow: 1;
+                border: none;
+                margin: 0;
+                margin-left: 1em;
+                color: white;
+            }
+
+            a {
+                color: white;
+                width: auto;
+                width: 150px;
+                position: absolute;
+                right:0;
+            }
         }
     }
 
