@@ -140,10 +140,6 @@ p {
 .ta-center {
   text-align: center; }
 
-.graphic__img {
-  -webkit-box-shadow: 1px 1px #000;
-          box-shadow: 1px 1px #000; }
-
 /*
     Flaticon icon font: Flaticon
     Creation date: 06/06/2018 19:07
@@ -550,13 +546,6 @@ p {
     .video-cont video {
       height: 70vh; }
 
-.graphic__img {
-  vertical-align: middle; }
-
-.graphic__hdr {
-  margin-top: 1rem;
-  font-size: 0.75rem; }
-
 .swiper-container {
   width: 100%;
   height: 100%; }
@@ -823,3 +812,41 @@ input {
         -ms-flex-pack: justify;
             justify-content: space-between;
     margin-bottom: 2em; }
+
+.commercial {
+  width: 80%;
+  margin: 0 auto;
+  position: relative; }
+
+.commercial_header {
+  position: relative;
+  bottom: 400px;
+  left: 250px;
+  font-size: 32px;
+  width: 544px;
+  height: 113px; }
+
+.commercial_img {
+  opacity: 0.5; }
+
+.commercial_description {
+  font-size: 16px;
+  width: 544px;
+  height: 113px;
+  position: relative;
+  bottom: 400px;
+  left: 220px; }
+
+.commercial_number {
+  position: relative;
+  bottom: 350px;
+  left: 180px; }
+
+.numberbig {
+  font-size: 36px; }
+
+.desc {
+  font-size: 20px;
+  margin-right: 50px;
+  -webkit-box-shadow: -5px 10px 5px 0px #7A217F;
+          box-shadow: -5px 10px 5px 0px #7A217F; }
