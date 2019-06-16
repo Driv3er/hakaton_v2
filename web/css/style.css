@@ -816,12 +816,15 @@ input {
 .commercial {
   width: 80%;
   margin: 0 auto;
-  position: relative; }
+  position: relative;
+  margin-top: 5%;
+  margin-bottom: -15%; }
 
 .commercial_header {
   position: relative;
   bottom: 400px;
   left: 250px;
+  margin-top: 1vh;
   font-size: 32px;
   width: 544px;
   height: 113px; }
@@ -848,5 +851,5 @@ input {
 .desc {
   font-size: 20px;
   margin-right: 50px;
-  -webkit-box-shadow: -5px 10px 5px 0px #7A217F;
-          box-shadow: -5px 10px 5px 0px #7A217F; }
+  -webkit-box-shadow: -5px 10px 5px 0px #a63dac;
+          box-shadow: -5px 10px 5px 0px #a63dac; }
